@@ -1,14 +1,26 @@
+import java.time.*;
+
 public class Employee {
     private int employeeId;
     private String name;
     private String department;
     private float payRate;
     private float hoursWorked;
+    private int checkInTime;
+    private int checkOutTime;
 
     public Employee(float payRate, float hoursWorked){
         this.payRate = payRate;
         this.hoursWorked = hoursWorked;
 
+    }
+
+    public void punchIn() {
+        this.checkInTime = LocalDateTime.now().getHour();
+    }
+
+    public void punchOut() {
+        this.checkInTime = LocalDateTime.now().getHour();
     }
 
     public float getTotalPay() {

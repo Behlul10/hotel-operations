@@ -7,6 +7,17 @@ public class Room {
     private boolean isAvailable;
 
 
+    public void checkIn() {
+        this.isOccupied = true;
+    }
+
+    public void checkOut() {
+        this.isOccupied = false;
+    }
+
+    public void cleanRoom() {
+        this.isDirty = false;
+    }
 
     public int getNumberOfBeds() { return this.numBeds; }
 
