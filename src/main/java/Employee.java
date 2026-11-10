@@ -15,9 +15,12 @@ public class Employee {
 
     }
 
-    public void punchIn() {
-        this.checkInTime = LocalDateTime.now().getHour();
-    }
+    public void punchIn(int time) { this.checkInTime = time; }
+
+    public void punchIn() { this.checkInTime = LocalDateTime.now().getHour(); }
+
+
+    public void punchOut(int time) { this.checkOutTime = time; }
 
     public void punchOut() {
         this.checkInTime = LocalDateTime.now().getHour();

@@ -2,6 +2,11 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+        Room room10 = new Room(10);
+        room10.display();
+
+
+        /*
         Scanner myScanner = new Scanner(System.in);
 
         System.out.println("""
@@ -24,6 +29,7 @@ public class Main {
             }
             default -> System.out.println("Pick a valid option");
         }
+         */
     }
 
     public static void checkInMenu(Scanner methodScanner) {
